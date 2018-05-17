@@ -17,11 +17,24 @@ WeChat IDE download [here](http://open.wechat.com/cgi-bin/newreadtemplate?t=over
 You’ll want to code in WeChat’s special code editor.
 
 ## 2. Start a New Project
-[image:3507C0E2-DDE0-4031-9F3D-B56CFA07440F-321-000061390ACFD4DC/Screen Shot 2018-05-15 at 3.56.18 PM.png]
-[image:799B7A70-3F35-4109-A647-BC4C16CCCF13-321-00006139180ED844/Screen Shot 2018-05-15 at 3.56.33 PM.png]
-[image:08CF1FB9-388C-4CCA-871D-3C67E6A7F5B0-321-00006139186C6069/Screen Shot 2018-05-15 at 3.56.47 PM.png]
-[image:DC6891E7-07CD-4C0C-86C1-0E1AF4FCC8AB-321-0000613918B45B77/Screen Shot 2018-05-15 at 3.58.01 PM.png]
-[image:F2A8CBF0-103A-4822-A9D3-9316E74F1DB7-321-000061391AD85288/Screen Shot 2018-05-15 at 3.58.28 PM.png]
+
+Starting a new project takes a couple of clicks but is quite simple. 
+
+### Step 1 
+> ![Step 1](https://github.com/dengel29/wx-basix/blob/master/New%20Project%201:5.png)
+The WeChat IDE may change and evolve, just make sure you're starting a  小程序
+### Step 2
+> ![Step 2](https://github.com/dengel29/wx-basix/blob/master/New%20Project%202:5.png)
+
+### Step 3
+> ![Step 3](https://github.com/dengel29/wx-basix/blob/master/New%20Project%203:5.png)
+
+### Step 4
+>![Step 4](https://github.com/dengel29/wx-basix/blob/master/New%20Project%204:5.png)
+
+### Step 5
+>![Step 5](https://github.com/dengel29/wx-basix/blob/master/New%20Project%205:5.png)
+
 
 Voila! You’re in.
 
@@ -38,7 +51,9 @@ You can start with this WXML code in index.html and replace the content.
 
 Find an image online, preferably phone-sized, like the one I’m using. You can just use this one for now, and swap it out later. 
 
-[image:DA6DE76B-1914-454E-9EBC-F67456D34447-321-000061705EEEDF9A/D920CBB7-90AF-4495-9313-10BC9E5EB706.png]
+![Panda](https://iphonewallpaperss.us/wp-content/uploads/2017/08/79-best-iphone-6-wallpapers-images-on-pinterest-with-iphone-6-funny-animal-wallpaper.jpg)
+
+You can use include this URL as the source for your background image: https://tinyurl.com/yda6swmk
 
 ## 4. WXSS
 WXSS selects elements in your WXML page and applies the style that you define. 
@@ -81,7 +96,7 @@ If you’re WXSS isn’t working, it’s probably because you haven’t added th
 ```
 <text class="title">Le Wagon</text>
 <text class="content">Learn to Code</text>
-<image src="https://iphonewallpaperss.us/wp-content/uploads/2017/08/79-best-iphone-6-wallpapers-images-on-pinterest-with-iphone-6-funny-animal-wallpaper.jpg"></image>
+<image src="https://tinyurl.com/yda6swmk"></image>
 <button type="default">Start now</button>
 <button class="btn"> Start</button>
 ```
