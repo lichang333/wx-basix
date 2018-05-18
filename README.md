@@ -2,9 +2,9 @@
 A One Day Entry-Level Course to wxml and wxss
 
 ## Welcome!
-This page is a reference for an introduction to programming Tencent’s WeChat mini-programs. You’ll be learning WeChat’s proprietary mark-up and styling languages, WXML and WXSS. If you’re familiar with HTML and CSS, lots of this will look familiar. 
+This page is a reference for an introduction to programming Tencent’s WeChat mini-programs. You’ll be learning WeChat’s proprietary mark-up and styling languages, WXML and WXSS. If you’re familiar with HTML and CSS, lots of this will look familiar :bowtie: 
 
-If you’re not familiar with HTML and CSS, what you learn today can help you learn those in the future :confetti_ball:
+If you’re not familiar with HTML and CSS, what you learn today can help you learn those in the future :muscle:
 
 ## Goals
 * Start a new project using WeChat’s IDE (integrated development environment)
@@ -14,8 +14,9 @@ If you’re not familiar with HTML and CSS, what you learn today can help you le
 * Get comfortable breaking things
 
 ## 1. Download!
-WeChat IDE download [here](http://open.wechat.com/cgi-bin/newreadtemplate?t=overseas_open/docs/mini-programs/development/devtools/download)
-You’ll want to code in WeChat’s special code editor.
+WeChat IDE download [here](http://open.wechat.com/cgi-bin/newreadtemplate?t=overseas_open/docs/mini-programs/development/devtools/download).
+
+You’ll want to code in WeChat’s special code editor, which will help you autocomplete and preview your work.
 
 ## 2. Start a New Project
 
@@ -23,7 +24,7 @@ Starting a new project takes a couple of clicks but is quite simple. Follow the 
 
 ### Step 1 
 > ![Step 1](https://github.com/dengel29/wx-basix/blob/master/New%20Project%201:5.png)
-(The WeChat IDE may change and evolve, just make sure you're starting a 小程序)
+
 ### Step 2
 > ![Step 2](https://github.com/dengel29/wx-basix/blob/master/New%20Project%202:5.png)
 
@@ -68,7 +69,7 @@ _Looking for colors:_
 	* For colors use [Colorzilla Chrome](http://www.colorzilla.com/chrome/) plugin to pick colors from other websites
 	* You can also find beautiful colors on [Coolors](https://coolors.co/) or [Color Hunt](http://colorhunt.co/)
 
-If you’re having trouble, copy paste :clipboard: the CSS code below :point_down: in `index.wxss ` and make it your own
+If you broke your WXSS, don't panic: copy paste :clipboard: the CSS code below :point_down: in `index.wxss ` and tweak the style
 ```
 .title {
   font-family: avenir;
@@ -93,7 +94,7 @@ If you’re having trouble, copy paste :clipboard: the CSS code below :point_dow
 }
 ```
 
-If you’re WXSS isn’t working, it’s probably because you haven’t added the corresponding class names to the WXML like below :point_down:
+If your WXSS isn’t working, it’s probably because you haven’t added the corresponding class names to the WXML like below :point_down:
 ```
 <text class="title">Le Wagon</text>
 <text class="content">Learn to Code</text>
@@ -149,7 +150,7 @@ Final WXSS for your fully-marked-up WXML file:
   flex-direction: column;
 }
 
-/* the banner content, which is composed of title and content. We want to move these independently of the button --> */
+/* the banner content, which is composed of title and content. We want to move these independently of the button */
 
 .content-container {
   font-family: avenir;
@@ -193,7 +194,7 @@ Final WXSS for your fully-marked-up WXML file:
 ## 7. Moving forward
 * Make a new page.
     1. Go to `app.json`
-	2. Add “pages/locate/locate” like this:
+    2. Add “pages/locate/locate” like this:
 ```
 {
   "pages":[
@@ -207,7 +208,7 @@ Final WXSS for your fully-marked-up WXML file:
 
 This will generate a new page with a set of four files, just like your `index` page does
 
-* Paste this JS into locate.js :clipboard:
+* Next, paste this JS into locate.js :clipboard:
 ```
 Page({
   data: {
