@@ -2,14 +2,15 @@
 A One Day Entry-Level Course to wxml and wxss
 
 ## Welcome!
-This site is a reference for an introduction to programming Tencent’s WeChat mini-programs. You’ll be learning WeChat’s proprietary mark-up and styling languages, WXML and WXSS. If you’re familiar with HTML and CSS, lots of this will look familiar. 
+This page is a reference for an introduction to programming Tencent’s WeChat mini-programs. You’ll be learning WeChat’s proprietary mark-up and styling languages, WXML and WXSS. If you’re familiar with HTML and CSS, lots of this will look familiar. 
 
-If you’re not familiar with HTML and CSS, what you learn today can help you learn those in the future.
+If you’re not familiar with HTML and CSS, what you learn today can help you learn those in the future :confetti_ball:
 
 ## Goals
 * Start a new project using WeChat’s IDE (integrated development environment)
 * Get familiar with basic syntax/vocabulary
-* Write some WXML
+* Write some WXML, write some WXSS
+* Make a pretty home page
 * Get comfortable breaking things
 
 ## 1. Download!
@@ -18,11 +19,11 @@ You’ll want to code in WeChat’s special code editor.
 
 ## 2. Start a New Project
 
-Starting a new project takes a couple of clicks but is quite simple. 
+Starting a new project takes a couple of clicks but is quite simple. Follow the steps below :point_down:
 
 ### Step 1 
 > ![Step 1](https://github.com/dengel29/wx-basix/blob/master/New%20Project%201:5.png)
-The WeChat IDE may change and evolve, just make sure you're starting a  小程序
+(The WeChat IDE may change and evolve, just make sure you're starting a 小程序)
 ### Step 2
 > ![Step 2](https://github.com/dengel29/wx-basix/blob/master/New%20Project%202:5.png)
 
@@ -41,7 +42,7 @@ Voila! You’re in.
 ## 3. WXML: your content and structure. 
 You can start with this WXML code in index.html and replace the content.
 
-/index.wxml/
+index.wxml
 ```
 <text>Le Wagon</text>
 <text>Learn to Code</text>
@@ -49,11 +50,11 @@ You can start with this WXML code in index.html and replace the content.
 <button type="default">Start now</button>
 ```
 
-Find an image online, preferably phone-sized, like the one I’m using. You can just use this one for now, and swap it out later. 
+Find an image online, preferably phone-sized, like the one I’m using. You can just use this one :point_down: for now, and swap it out later. 
 
 ![Panda](https://iphonewallpaperss.us/wp-content/uploads/2017/08/79-best-iphone-6-wallpapers-images-on-pinterest-with-iphone-6-funny-animal-wallpaper.jpg)
 
-You can use include this URL as the source for your background image: https://tinyurl.com/yda6swmk
+You can use include this URL as the source for your background image :point_right: https://tinyurl.com/yda6swmk :clipboard:
 
 ## 4. WXSS
 WXSS selects elements in your WXML page and applies the style that you define. 
@@ -67,10 +68,10 @@ _Looking for colors:_
 	* For colors use [Colorzilla Chrome](http://www.colorzilla.com/chrome/) plugin to pick colors from other websites
 	* You can also find beautiful colors on [Coolors](https://coolors.co/) or [Color Hunt](http://colorhunt.co/)
 
-If you’re having trouble, copy paste the CSS code below in `index.wxss ` and make it your own
+If you’re having trouble, copy paste :clipboard: the CSS code below :point_down: in `index.wxss ` and make it your own
 ```
 .title {
-	font-family: avenir;
+  font-family: avenir;
   font-size: 48px;
   font-weight: 4px;
   display: block; 
@@ -78,7 +79,7 @@ If you’re having trouble, copy paste the CSS code below in `index.wxss ` and m
 }
 
 .content {
-	font-family: avenir;
+  font-family: avenir;
   font-size: 24px;
   font-weight: 2px;
 }
@@ -92,7 +93,7 @@ If you’re having trouble, copy paste the CSS code below in `index.wxss ` and m
 }
 ```
 
-If you’re WXSS isn’t working, it’s probably because you haven’t added the corresponding class names to the WXML.
+If you’re WXSS isn’t working, it’s probably because you haven’t added the corresponding class names to the WXML like below :point_down:
 ```
 <text class="title">Le Wagon</text>
 <text class="content">Learn to Code</text>
@@ -102,7 +103,8 @@ If you’re WXSS isn’t working, it’s probably because you haven’t added th
 ```
 
 ## 5. `<view>` to straighten things out
-A view will create a rectangle around one or many elements in you WXML. You can also apply classes to views to adjust their height, width, background, position,  the positioning of the element inside, and more.  
+* A `view` will create a rectangle around one or many elements in you WXML. 
+* You can also apply classes to views to adjust their height, width, background, position, the positioning of the element(s) inside, and more.  
 
 Wrap the following elements in `<view>` tags:
 * The entire page
@@ -111,12 +113,15 @@ Wrap the following elements in `<view>` tags:
 * Give each view a class, so we can style them in the WXSS
 
 ```
+<!--the banner contains all content, image, title, content, and button.  -->
 <view class="banner"> 
+ 
  <!-- the banner content, which is composed of title and content. We want to move these independently of the button-->
   <view class="content-container" > 
     
     <!-- the title -->
     <text class="title">Le Wagon</text>
+	
     <!-- the content -->
     <text class="content">Change Your Life 
     Learn to Code</text>   
@@ -125,7 +130,7 @@ Wrap the following elements in `<view>` tags:
 
   <!-- the button -->
   <view class="btn-div">
-  		<button class="btn"> Start</button>
+  	<button class="btn"> Start</button>
   </view>  
 </view> 
 ```
@@ -133,8 +138,7 @@ Wrap the following elements in `<view>` tags:
 ## 6. Make it perfect
 Final WXSS for your fully-marked-up WXML file:
 ```
-
-/* the banner, which contains both the content and the button --> */
+/* the banner, which contains both the content and the button */
 .banner {
   background-image: linear-gradient(-125deg, rgba(0,101,168,0.5) 0%, rgba(215, 49, 55, 0.2) 50%), url('https://iphonewallpaperss.us/wp-content/uploads/2017/08/79-best-iphone-6-wallpapers-images-on-pinterest-with-iphone-6-funny-animal-wallpaper.jpg');
   height: 100vh;
@@ -154,7 +158,7 @@ Final WXSS for your fully-marked-up WXML file:
   text-align: center; 
 }
 
-/* the title --> */
+/* the title */
 
 .title {
   font-size: 48px;
@@ -188,22 +192,22 @@ Final WXSS for your fully-marked-up WXML file:
 
 ## 7. Moving forward
 * Make a new page.
-	1. Go to `app.json`
+    1. Go to `app.json`
 	2. Add “pages/locate/locate” like this:
 ```
 {
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-	  "pages/locate/locate" 
+    "pages/locate/locate" 
   ],
  }
 ```
-don’t forget the comma after "pages/logs/logs”
+:warning: don’t forget the comma after "pages/logs/logs” :warning:
 
-This will generate a new page with a set of four files, like this
+This will generate a new page with a set of four files, just like your `index` page does
 
-* Paste this JS into locate.js
+* Paste this JS into locate.js :clipboard:
 ```
 Page({
   data: {
@@ -236,7 +240,7 @@ Page({
 })
 ```
 
-* Paste this WXML into locate.wxml
+* Paste this WXML into locate.wxml :clipboard:
 ```
 <map id="myMap" show-location />
 
@@ -254,7 +258,7 @@ Page({
 </view>
 ```
 
-* Paste this into locate.wxss
+* Paste this into locate.wxss :clipboard:
 ```
 #myMap {
   height: 70vh;
@@ -275,7 +279,7 @@ Page({
 }
 ```
 
-Add tabs:
+Want a different way to navigate between pages? Add tabs in your `app.json` file 
 ```
 json
 //inside app.json
@@ -290,9 +294,9 @@ json
   },
 ```
 
-Add navigator to your button:
+Wrap your button in `navigator` tags, to link to your new page:
 ```
-<navigator url="../slider/slider" class="btn-div">
+<navigator url="../locate/locate" class="btn-div">
    <button class="btn"> Start</button>
 </navigator>
 ```
