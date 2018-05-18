@@ -282,8 +282,6 @@ Page({
 
 Want a different way to navigate between pages? Add tabs in your `app.json` file 
 ```
-json
-//inside app.json
 "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
@@ -303,6 +301,7 @@ Wrap your button in `navigator` tags, to link to your new page:
 ```
 ## Interested in going even further?
 
-* The official WeChat documentation []
-* Follow our official account for info on more workshops [QR Code}
-* [Apply to Le Wagon](http://lewagon.com/chengdu)
+* [The official WeChat documentation](http://open.wechat.com/cgi-bin/newreadtemplate?t=overseas_open/docs/mini-programs/development/brief-tutorial#development_brief-tutorial)
+* Follow our official account for info on future workshops
+  <img src="https://github.com/dengel29/wx-basix/blob/master/ChengduOA-QR.jpg?raw=true" width="200">
+* [Apply to Le Wagon's next batch, starting June 25!! :confetti_ball:](http://lewagon.com/chengdu)
