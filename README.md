@@ -301,3 +301,8 @@ Wrap your button in `navigator` tags, to link to your new page:
    <button class="btn"> Start</button>
 </navigator>
 ```
+## Interested in going even further?
+
+* The official WeChat documentation []
+* Follow our official account for info on more workshops [QR Code}
+* [Apply to Le Wagon](http://lewagon.com/chengdu)
