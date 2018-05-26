@@ -102,6 +102,22 @@ If your WXSS isn’t working, it’s probably because you haven’t added the co
 <button type="default">Start now</button>
 <button class="btn"> Start</button>
 ```
+### Styling the Image: In-line style vs. code splitting
+Some people say more is better. Some don't. We have more than one way to add style, we can add style. You can do largely the same things, but there are a few differences. One difference that you might notice is that local images (images saved on your computer) *can* be used in **inline style** like this. 
+
+```
+<image class="banner" style="background-image: url('../../images/panda.jpeg')"> 
+```
+
+However, we must use an **external image** (image on the internet, with a URL source) if we want to put all of our style in the `.wxss` file:
+
+```
+.banner {
+  background-image: url('https://tinyurl.com/yda6swmk');
+}
+```
+
+The efect is the same, but the way we write the code is different. No worries. Read more about the `<image>` element [here](http://open.wechat.com/cgi-bin/newreadtemplate?t=overseas_open/docs/mini-programs/development/component/image#component_image)
 
 ## 5. `<view>` to straighten things out
 * A `view` will create a rectangle around one or many elements in you WXML. 
